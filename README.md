@@ -127,7 +127,8 @@ A model can regress values with at most 100% accuracy. However, given the way th
 As is empirically shown, the most potent models are the tree-based ones. The worst contender is the MLP/Neural Networks. No matter how they are trained, they do not perform well, nor can they outdo the tree-based models in tabular data regression. Even after 200+ epochs of training, they cannot outperform a Random Forest Regression, which would take less than 2 minutes (without requiring a GPU), in contrast to the Neural Network, which requires a GPU in order to be trained.
 
 ## Q4 - Position at DrivenData competition
-The best attempt has achieved a position of 236 out of 1023 participants currently, with a score of 15525 on the competition's metric.
+The best attempt currently ranks 236th out of 1,023 participants, with a competition metric score of 15,525.
+<img width="820" height="215" alt="image" src="https://github.com/user-attachments/assets/d38cb4f5-e674-493a-8695-c47c106b0973" />
 
 ## Q5 - Discussion
 Here we discuss what worked, what did not, which features the models rely on, and how predictions could be improved.

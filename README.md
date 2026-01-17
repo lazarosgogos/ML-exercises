@@ -92,6 +92,10 @@ Treat each column type differently by filling missing values:
 **Poverty Benchmarks**
 * _pline5 - _pline95: These represent various poverty lines corresponding to specific percentiles (from the 5th to the 95th) of the welfare distribution in the training data.
 
+**Correlation plot**
+
+<img width="5597" height="5970" alt="image" src="https://github.com/user-attachments/assets/125b57f4-61c8-4369-954f-da1ef2ce4bb5" />
+
 ## Q3 - Applying 3 different ML algorithms
 
 We have selected a Random Forest, an XGBoost, a KNeighbors and an SGD regressor, in order to compare various techniques in tabular data prediction.
@@ -104,13 +108,16 @@ The most adequate model seems to be the XGBoost regressor, out of the ones menti
 
 #### Table of results with accuracy of predictions
 
-
 Metric   | Random Forest | XGBoost | KNeighbors |   SGD   | MLP | Custom NN | Description
-:-------:|:-------------:|:-------:|:----------:|:-------:|:---:|:--:|:----------:
-Accuracy |     63.13%    | 64.32%  |   20.02%   |    -    | 58% | - | higher is better
-Competition metric| 8.48 | 8.95    |    19.83   |   844   |  -  | 545.70 | lower is better
-ws-MAPE  |    0.08       |   0.07  |    0.18    |   2.32  |     | 1.00 | lower is better
-wMAPE    |      0.14     |   0.29  |    0.40    |   63.55 |     | 45.61 | lower is better
+:-------:|:-------------:|:-------:|:----------:|:-------:|:---:|:---------:|:----------:
+Accuracy |     63.13%    | 64.32%  |   20.02%   |    -    | 58% | -         | higher is better
+Competition metric| 8.48 | 8.95    |    19.83   |   844   |  -  | 545.70    | lower is better
+ws-MAPE  |    0.08       |   0.07  |    0.18    |   2.32  |  -  | 1.00      | lower is better
+wMAPE    |      0.14     |   0.29  |    0.40    |   63.55 |  -  | 45.61     | lower is better
+
+##### Neural Network behavior
+The Neural Network's behavior is best described with a Mean Absolute Error (MAE) per epoch plot. While its MAE seems to improve rapidly, it plateaus from the very beginning, meaning it is not trained beyond that point. 
+<img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/63a08480-0cc6-4ef1-bc8d-3fe80024a09f" />
 
 
 #### Why is the SGD accuracy not reported?

@@ -3,7 +3,7 @@ This repository contains exercises, provided as Python notebooks, from the ML co
 
 In addition to the individual ML exercises, the repository includes the final project description below. It provides a complete walkthrough of the Python notebook workflow used to complete the competition hosted at [drivendata.org](https://www.drivendata.org/competitions/305/competition-worldbank-poverty/page/963/).
 
-# == FINAL PROJECT - POVERTY PREDICTION CHALLENGE ==
+# Poverty Prediction Challenge
 
 ## Q1 - Dataset preprocessing
 
